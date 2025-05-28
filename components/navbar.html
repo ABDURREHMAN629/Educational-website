@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    header {
+      width: auto;
+    }
+
+    nav {
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      /* space between image and links */
+      align-items: center;
+      padding: 0 10vw;
+      /* 🟡 Adds space on left and right edges */
+      background: linear-gradient(to right,
+          rgba(30, 42, 120, 0.8),
+          rgba(0, 191, 255, 0.4)),
+        url("your-bg.jpg") no-repeat center center/cover;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+      z-index: 9999;
+      position: fixed;
+      /* overflow: hidden; */
+    }
+
+    .image {
+      height: 100%;
+      width: 20vw;
+
+      transform: translateX(-6vw);
+    }
+
+    .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .nav-link ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 80px;
+    }
+
+    .nav-link a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .nav-link a:hover {
+      color: #0077ff;
+      text-decoration: underline;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn1 {
+      height: 5vh;
+      width: 10vw;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 25px;
+      /* padding: 0 20px; */
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    /* Style for the main menu */
+
+    .nav-links>li {
+      position: relative;
+
+      cursor: pointer;
+    }
+
+    /* Hide dropdown initially */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      /* Below the parent */
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px 0;
+      z-index: 999;
+      border-radius: 3vh;
+    }
+
+    /* Show on hover */
+    #home:hover .dropdown {
+      display: block;
+    }
+
+    /* Style dropdown list */
+    .dropdown ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown ul li {
+      padding: 8px 20px;
+    }
+
+    .dropdown ul li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .dropdown ul li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav>
+        <div class="image"><img src="assets/arlogo.png" alt=""></div>
+        <div class="nav-link">
+
+          <ul class="nav-links">
+            <li id="home"> <a href="#aboutus">Home</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Partners</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#videos">Projects</a></li>
+            <li><a href="#services">more</a></li>
+            <li><button class="btn1">Applpy Now</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+</body>
+
+</html>

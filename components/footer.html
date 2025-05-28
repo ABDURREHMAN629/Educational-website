@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>footer</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    footer {
+      background-color: #1E2A78;
+      color: #fff;
+      padding: 40px 20px;
+      height: 60vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+    }
+
+    .footer-column h3,
+    .footer-column h4 {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: #00bfff;
+    }
+
+    .footer-column p {
+      line-height: 1.6;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column p:hover {
+      color: #00bfff;
+    }
+
+    .newsletter-form {
+      margin-top: 20px;
+      display: flex;
+      border-radius: 30px;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .newsletter-form input[type="email"] {
+      padding: 10px 15px;
+      flex: 1;
+      border: none;
+      border-radius: 30px 0 0 30px;
+      outline: none;
+    }
+
+    .newsletter-form button {
+
+      padding: 10px 20px;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 0 30px 30px 0;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .footer-column {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <footer>
+    <div class="footer-container">
+
+
+      <div class="footer-column">
+        <h3>Edify</h3>
+        <p>
+          Let us help you yield your true academic potential for foreign education.
+          To configure and discover an apt international enrolment strategy, get in touch!
+        </p>
+
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <p>📞 +92 324 7440 629</p>
+        <p>✉️ gabdurrehman493@gmail.com</p>
+        <p>📍 Faisalabad</p>
+      </div>
+
+
+      <div class="social-icons">
+        <a href="#"><img src="assets/fb.jpeg" alt="Facebook"></a>
+        <a href="#"><img src="assets/twitter.jpeg" alt="Twitter"></a>
+        <a href="#"><img src="assets/insta.jpeg" alt="Instagram"></a>
+        <a href="#"><img src="assets/linkid.jpeg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/yt.jpeg" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

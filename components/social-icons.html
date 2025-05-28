@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            width: 0%;
+        }
+
+        .link-social {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .link-social-icons {
+            position: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            width: 40px;
+            height: auto;
+            transform: translateX(45vw);
+            gap: 10px;
+        }
+
+        .link-social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+        }
+
+        .link-social-icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link-social">
+        <div class="link-social-icons">
+            <a href="#"><img src="assets/fb.jpeg" alt="Facebook"></a>
+            <a href="#"><img src="assets/twitter.jpeg" alt="Twitter"></a>
+            <a href="#"><img src="assets/insta.jpeg" alt="Instagram"></a>
+            <a href="#"><img src="assets/linkid.jpeg" alt="LinkedIn"></a>
+            <a href="#"><img src="assets/yt.jpeg" alt="YouTube"></a>
+        </div>
+    </div>
+</body>
+
+</html>
